@@ -53,6 +53,7 @@ Osoba chcąca zakupić produkt na aukcji.
 * ...
 
 [Kupujący](#ac2)
+* [UC1](#uc2): wystawienie oferty i kupienie towaru
 * ...
 
 ---
