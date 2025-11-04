@@ -54,8 +54,8 @@ Osoba chcąca zakupić produkt na aukcji.
 * ...
 
 [Kupujący](#ac2)
-* [UC1](#br1): wystawienie oferty
-* [UC2](#br2): wygranie aukcji
+* [UC3](#br1): wystawienie oferty
+* [UC4](#br2): wygranie aukcji
 * ...
 
 ---
@@ -129,5 +129,3 @@ Aukcję wygrywa ten z [Kupujący](#ac2)ch, który w momencie jej zakończenia (u
 | ------------------------------------------------- | ------ | ------- | --- |
 | UC1: Wystawienia produktu na aukcję               |    C   |    C    | ... |
 | ???                                               |  ...   |  ...    | ... |
-
-
