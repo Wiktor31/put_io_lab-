@@ -85,11 +85,16 @@ Osoba chcąca zakupić produkt na aukcji.
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
 
 **Scenariusz główny:**
-1. [Sprzedający](#ac1) zgłasza do systemu chęć wysłania produktu.
-2. System prosi o podanie danych.
-3. [Sprzedający](#ac1) podaje adres kupującego.
-4. System wysyła produkt do sprzedawcy.
+1. [Sprzedający](#ac1) zgłasza do systemu chęć wysłania produktu i wysyła swoje dane.
+2. system potwierdza czy zapłata zostałą pokonana
+3. System wysyła dane.
+4. [Sprzedający](#ac1) wysyła do danego adresu.
 ---
+   
+**Scenariusze alternatywne:** 
+
+2.A. nie ma zapłaty.
+* 4.A.1. System informuje o braku zapłaty.
 
 <a id="UC3"></a>
 ### UC3: ...
@@ -117,15 +122,15 @@ Osoba chcąca zakupić produkt na aukcji.
 **Scenariusz główny:**
 1. [Kupujący](#ac2) zgłasza swoją chęć na zapłate produktu w aukcji
 2. System podaje konto.
-3. [Kupujący](#ac2) płaci na dane konto
-4. System weryfikuje czy zapłata się udałą
+3. [Kupujący](#ac2) płaci na dane konto i wysyła swój adres
+4. System weryfikuje czy zapłata się udała
 5. System informuje o pomyślnym przelewie.
 
 **Scenariusze alternatywne:** 
 
-4.A. Podano za małą oferte.
-* 4.A.1. System informuje o za małej ofercie.
-* 4.A.2. Przejdź do kroku 2.
+4.A. zapłąta się nie udała.
+* 4.A.1. System informuje o braku zapłaty.
+* 4.A.2. 3.
 
 ---
 
