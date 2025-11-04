@@ -56,7 +56,6 @@ Osoba chcąca zakupić produkt na aukcji.
 [Kupujący](#ac2)
 * [UC1](#br1): wystawienie oferty
 * [UC2](#br2): wygranie aukcji
-* [UC3](#uc2): polacenie
 * ...
 
 ---
