@@ -53,7 +53,7 @@ Osoba chcąca zakupić produkt na aukcji.
 * ...
 
 [Kupujący](#ac2)
-* [UC1](#uc2): wystawienie oferty i kupienie towaru
+* [UC2](#uc2): wystawienie oferty
 * ...
 
 ---
@@ -77,18 +77,23 @@ Osoba chcąca zakupić produkt na aukcji.
 
 ---
 
-<a id="uc2"></a>
+<a id="BR1"></a>
 ### UC2: ...
 
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
 
 **Scenariusz główny:**
-1. ...
+1. [Kupujący](#ac2) zgłasza swoją chęć oferty na zakup produktu w aukcji
+2. System prosi o podanie oferty dla produktu.
+3. [Kupujący](#ac2) zgłasza swoją oferta na zakup
+4. System weryfikuje czy cena jest wyższa od obecnej ceny
+5. System informuje o pomyślnym ofercie na produkt i zmiana ceny produktu.
 
 **Scenariusze alternatywne:** 
 
-1.A. ...
-* 4.A.1. ...
+4.A. Podano za małą oferte.
+* 4.A.1. System informuje o za małej ofercie.
+* 4.A.2. Przejdź do kroku 2.
 
 ---
 
