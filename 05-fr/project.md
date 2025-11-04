@@ -50,12 +50,12 @@ Osoba chcąca zakupić produkt na aukcji.
 
 [Sprzedający](#ac1):
 * [UC1](#uc1): Wystawienie produktu na aukcję
-* [UC2](#uc2): sprzedanie produktu na aukcji
+* [UC2](#uc2): Wysłąnie produktu
 * ...
 
 [Kupujący](#ac2)
 * [UC3](#UC3): wystawienie oferty
-* [UC4](#UC4): wygranie aukcji
+* [UC4](#UC4): dokonanie płątności
 * ...
 
 ---
@@ -85,10 +85,10 @@ Osoba chcąca zakupić produkt na aukcji.
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
 
 **Scenariusz główny:**
-1. [Sprzedający](#ac1) zgłasza do systemu chęć sprzedania produktu na aukcję.
-2. System prosi o podanie danych do tranzakcji.
-3. [Sprzedający](#ac1) podaje dane konta bankowego.
-4. System wysyła pieniądze do sprzedawcy.
+1. [Sprzedający](#ac1) zgłasza do systemu chęć wysłania produktu.
+2. System prosi o podanie danych.
+3. [Sprzedający](#ac1) podaje adres kupującego.
+4. System wysyła produkt do sprzedawcy.
 ---
 
 <a id="UC3"></a>
@@ -109,17 +109,17 @@ Osoba chcąca zakupić produkt na aukcji.
 * 4.A.1. System informuje o za małej ofercie.
 * 4.A.2. Przejdź do kroku 2.
 
----<a id="UC3"></a>
+---<a id="UC4"></a>
 ### UC3: ...
 
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
 
 **Scenariusz główny:**
-1. [Kupujący](#ac2) zgłasza swoją chęć oferty na zakup produktu w aukcji
-2. System prosi o podanie oferty dla produktu.
-3. [Kupujący](#ac2) zgłasza swoją oferta na zakup
-4. System weryfikuje czy cena jest wyższa od obecnej ceny
-5. System informuje o pomyślnym ofercie na produkt i zmiana ceny produktu.
+1. [Kupujący](#ac2) zgłasza swoją chęć na zapłate produktu w aukcji
+2. System podaje konto.
+3. [Kupujący](#ac2) płaci na dane konto
+4. System weryfikuje czy zapłata się udałą
+5. System informuje o pomyślnym przelewie.
 
 **Scenariusze alternatywne:** 
 
