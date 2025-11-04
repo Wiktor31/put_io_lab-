@@ -80,24 +80,19 @@ Osoba chcąca zakupić produkt na aukcji.
 ---
 
 <a id="UC2"></a>
-### UC2: ...
+### UC2: Wysłąnie produktu
 
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
 
 **Scenariusz główny:**
-1. [Sprzedający](#ac1) zgłasza do systemu chęć wysłania produktu i wysyła swoje dane.
-2. system potwierdza czy zapłata zostałą pokonana
-3. System wysyła dane.
-4. [Sprzedający](#ac1) wysyła do danego adresu.
+1. [Sprzedający](#ac1) zgłasza do systemu chęć wysłania produktu.
+2. System prosi o podanie danych.
+3. [Sprzedający](#ac1) podaje adres kupującego.
+4. System wysyła produkt do sprzedawcy.
 ---
-   
-**Scenariusze alternatywne:** 
-
-2.A. nie ma zapłaty.
-* 4.A.1. System informuje o braku zapłaty.
 
 <a id="UC3"></a>
-### UC3: ...
+### UC3: wystawienie oferty
 
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
 
@@ -115,22 +110,22 @@ Osoba chcąca zakupić produkt na aukcji.
 * 4.A.2. Przejdź do kroku 2.
 
 ---<a id="UC4"></a>
-### UC3: ...
+### UC3: dokonanie platności
 
 **Aktorzy:** [Sprzedający](#ac1), [Kupujący](#ac2), ...
 
 **Scenariusz główny:**
 1. [Kupujący](#ac2) zgłasza swoją chęć na zapłate produktu w aukcji
 2. System podaje konto.
-3. [Kupujący](#ac2) płaci na dane konto i wysyła swój adres
-4. System weryfikuje czy zapłata się udała
+3. [Kupujący](#ac2) płaci na dane konto
+4. System weryfikuje czy zapłata się udałą
 5. System informuje o pomyślnym przelewie.
 
 **Scenariusze alternatywne:** 
 
-4.A. zapłąta się nie udała.
-* 4.A.1. System informuje o braku zapłaty.
-* 4.A.2. 3.
+4.A. Podano za małą oferte.
+* 4.A.1. System informuje o za małej ofercie.
+* 4.A.2. Przejdź do kroku 2.
 
 ---
 
@@ -160,7 +155,10 @@ Aukcję wygrywa ten z [Kupujący](#ac2)ch, który w momencie jej zakończenia (u
 ## Macierz CRUDL
 
 
-| Przypadek użycia                                  | Aukcja | Produkt | ... |
+| Przypadek użycia                                  | Aukcja | Produkt | adres |  konto | 
 | ------------------------------------------------- | ------ | ------- | --- |
-| UC1: Wystawienia produktu na aukcję               |    C   |    C    | ... |
+| UC1: Wystawienia produktu na aukcję               |    c   |    C    | ... | ...
+| UC2: Wysłąnie produktu               |    ...   |    ...    | r | c
+| UC3: wystawienie oferty               |    ...   |    ...    | ... | ...|
+| UC4: dokonanie płątności               |    ...   |    ...    | ... |
 | ???                                               |  ...   |  ...    | ... |
