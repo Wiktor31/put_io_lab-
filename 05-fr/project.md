@@ -158,7 +158,7 @@ Aukcję wygrywa ten z [Kupujący](#ac2)ch, który w momencie jej zakończenia (u
 | Przypadek użycia                                  | Aukcja | Produkt | adres |  konto | 
 | ------------------------------------------------- | ------ | ------- | --- |
 | UC1: Wystawienia produktu na aukcję               |    c   |    C    | ... | ...
-| UC2: Wysłąnie produktu               |    ...   |    ...    | r | c
-| UC3: wystawienie oferty               |    ...   |    ...    | ... | ...|
-| UC4: dokonanie płątności               |    ...   |    ...    | ... |
+| UC2: Wysłąnie produktu                            |    ...   |    ...    | r | c
+| UC3: wystawienie oferty                           |    ...   |    r,c    | ... | ...|
+| UC4: dokonanie płątności                          |    r   |    r    | ... | r|
 | ???                                               |  ...   |  ...    | ... |
